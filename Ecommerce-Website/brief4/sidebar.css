@@ -1,0 +1,66 @@
+/* Sidebar styles */
+.custom-sidebar {
+    background: #3b5d50;
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px; /* Adjust the width as needed */
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 1000;
+}
+
+.custom-sidebar .navbar-brand {
+    font-size: 32px;
+    font-weight: 600;
+    display: block;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #2e4b41; /* Optional: Border below the logo */
+}
+
+.custom-sidebar .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.custom-sidebar .nav-item {
+    margin-bottom: 10px;
+}
+
+.custom-sidebar .nav-link {
+    font-weight: 500;
+    color: #ffffff !important;
+    opacity: 0.5;
+    transition: 0.3s all ease;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.custom-sidebar .nav-link:hover {
+    opacity: 1;
+    background-color: #2e4b41;
+}
+
+.custom-sidebar .nav-item.active .nav-link {
+    opacity: 1;
+    background-color: #2e4b41;
+}
+
+/* Adjust body padding to account for sidebar */
+body {
+    margin-left: 250px; 
+    padding-top: 20px; 
+}
+
+.main-container {
+    padding-left: 20px; 
+}

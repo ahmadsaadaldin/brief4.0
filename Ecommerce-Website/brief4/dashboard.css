@@ -1,0 +1,65 @@
+.custom-sidebar {
+  background: #3b5d50 !important;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px; /* Adjust the width as needed */
+  z-index: 1000;
+  overflow-y: auto; /* Add scrollbar if content overflows */
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-sidebar .navbar-brand {
+  font-size: 32px;
+  font-weight: 600;
+  display: block;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 20px; /* Space below the logo */
+  border-bottom: 1px solid #2e4b41; /* Optional: Border below the logo */
+}
+
+.custom-sidebar .custom-sidebar-nav {
+  flex: 1; /* Takes up the remaining space */
+}
+
+.custom-sidebar .navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.custom-sidebar .nav-item {
+  margin-bottom: 10px;
+}
+
+.custom-sidebar .nav-link {
+  font-weight: 500;
+  color: #ffffff !important;
+  opacity: 0.5;
+  transition: 0.3s all ease;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.custom-sidebar .nav-link:hover {
+  opacity: 1;
+  background-color: #2e4b41;
+}
+
+.custom-sidebar .nav-item.active .nav-link {
+  opacity: 1;
+  background-color: #2e4b41;
+}
+
+body {
+  padding-left: 250px; /* Adjust according to sidebar width */
+  padding-top: 40px; /* Adjust based on your top padding */
+}
